@@ -33,6 +33,9 @@ install_modules() {
     echo "---> Installing node modules"
     yarn install --no-lockfile
   fi
+
+  echo "---> Installing Macaca Datahub"
+  npm install macaca-datahub -g
 }
 
 install_or_reuse_node_modules() {
